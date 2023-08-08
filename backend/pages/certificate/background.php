@@ -136,7 +136,7 @@
                                             $data = $bgObj->getBg("data");
                                             foreach($data as $bg){
                                                 echo "
-                                                    <div class='col-md-2'>
+                                                    <div class='col-md-2 col-6 p-1'>
                                                         <img src='{$bg['b_path']}{$bg['b_name']}' class='img-thumbnail' alt='...'>
                                                     </div>
                                                 ";
