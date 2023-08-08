@@ -33,6 +33,10 @@
                     $file_path = $_SERVER['DOCUMENT_ROOT']."/scicertificate/backend/images/bg/".$new_name;
                     if($_FILES['error']==0){
                         move_uploaded_file($_FILES['file_register']['tmp_name'],$file_path);
+                        $data['b_name'] = $new_name;
+                        $data['b_path'] = "/scicertificate/backend/images/bg/";
+                        $data['status'] = 1;
+                        print_r($data);
                     }else{
                         echo "No file";
                     }
