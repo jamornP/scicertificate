@@ -2,7 +2,7 @@
     "name": "science/scicertificate",
     "autoload": {
         "psr-4": {
-            "Science\\Scicertificate\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [

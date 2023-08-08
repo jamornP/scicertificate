@@ -32,9 +32,9 @@
         <div class="content-wrapper">
             <?php
             if (isset($_POST['add'])) {
-                print_r($_FILES['bg']);
-                echo "<br>";
-                print_r($_POST);
+                // print_r($_FILES['bg']);
+                // echo "<br>";
+                // print_r($_POST);
                 if(isset($_FILES['bg']['tmp_name'])){
                     $ext=(explode(".",$_FILES['bg']['name']));
                     $new_name = $_POST['b_name'].".".$ext[1];
@@ -44,8 +44,19 @@
                         $data['b_name'] = $new_name;
                         $data['b_path'] = "/scicertificate/backend/images/bg/";
                         $data['status'] = 1;
-                        print_r($data);
-                        
+                        // print_r($data);
+                        $ck = $bgObj->addBg($data);
+                        if($ck){
+                            $msg = "บันทึกข้อมูลสำเร็จ";
+                            echo "<script>";
+                            echo "alertSuccess('{$msg}','background.php')";
+                            echo "</script>";
+                        }else{
+                            $msg = "บันทึกข่อมูลไม่สำเร็จ";
+                            echo "<script>";
+                            echo "alertError('{$msg}')";
+                            echo "</script>";
+                        }
                     }else{
                         echo "No file";
                     }
@@ -75,7 +86,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Bg ทั้งหมด</h3>
+                                    <h3 class="card-title">เพิ่ม Background</h3>
                                 </div>
                                 <div class="card-body">
                                     <form action="" method="post" enctype="multipart/form-data" id="from-post">
@@ -108,6 +119,31 @@
                                             
                                         </div> -->
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Bg ทั้งหมด</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <?php
+                                            $data = $bgObj->getBg("data");
+                                            foreach($data as $bg){
+                                                echo "
+                                                    <div class='col-md-2'>
+                                                        <img src='{$bg['b_path']}{$bg['b_name']}' class='img-thumbnail' alt='...'>
+                                                    </div>
+                                                ";
+                                            }
+                                        ?>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>

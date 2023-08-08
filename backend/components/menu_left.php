@@ -1,3 +1,15 @@
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/vendor/autoload.php"; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/function/function.php"; ?>
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/auth/auth.php"; ?>
+
+<?php
+session_start();
+// use App\Model\Auth;
+// $authObj = new Auth;
+use App\Model\Background;
+$bgObj = new Background;
+date_default_timezone_set('Asia/Bangkok');
+?>
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1e1e34;">
     <!-- Brand Logo -->
