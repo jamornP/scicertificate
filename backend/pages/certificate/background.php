@@ -28,11 +28,14 @@
             <?php
             if (isset($_POST['add'])) {
                 print_r($_FILES['bg']);
-                if(isset($_FILES['file_register']['tmp_name'])){
-                    $new_name = $_POST['n_name'];
+                echo "<br>";
+                print_r($_POST);
+                if(isset($_FILES['bg']['tmp_name'])){
+                    $ext=(explode(".",$_FILES['bg']['name']));
+                    $new_name = $_POST['b_name'].".".$ext[1];
                     $file_path = $_SERVER['DOCUMENT_ROOT']."/scicertificate/backend/images/bg/".$new_name;
-                    if($_FILES['error']==0){
-                        move_uploaded_file($_FILES['file_register']['tmp_name'],$file_path);
+                    if($_FILES['bg']['error']==0){
+                        move_uploaded_file($_FILES['bg']['tmp_name'],$file_path);
                         $data['b_name'] = $new_name;
                         $data['b_path'] = "/scicertificate/backend/images/bg/";
                         $data['status'] = 1;
