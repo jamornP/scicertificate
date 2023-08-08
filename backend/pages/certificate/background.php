@@ -22,14 +22,25 @@
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/load.php"; ?>
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/menu_left.php"; ?>
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/navbar.php"; ?>
-        
+
 
         <div class="content-wrapper">
-        <?php
-            // if(isset($_POST['add'])){
+            <?php
+            if (isset($_POST['add'])) {
                 print_r($_FILES['bg']);
-            // }
-        ?>
+                if(isset($_FILES['file_register']['tmp_name'])){
+                    $new_name = $_POST['n_name'];
+                    $file_path = $_SERVER['DOCUMENT_ROOT']."/scicertificate/backend/images/bg/".$new_name;
+                    if($_FILES['error']==0){
+                        move_uploaded_file($_FILES['file_register']['tmp_name'],$file_path);
+                    }else{
+                        echo "No file";
+                    }
+                }else{
+                    echo "No file";
+                }
+            }
+            ?>
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
@@ -56,19 +67,33 @@
                                 <div class="card-body">
                                     <form action="" method="post" enctype="multipart/form-data" id="from-post">
                                         <div class="card-body">
-                                            <div class="form-group">
-                                                <label for="exampleInputFile">File Background</label>
-                                                <div class="input-group">
-                                                    <div class="custom-file">
-                                                        <input type="file" class="custom-file-input" id="exampleInputFile" name="bg">
-                                                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                                                    </div>
-                                                    <div class="input-group-append">
-                                                    <button type="submit" class="btn btn-primary" name="add">Submit</button>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputFile">File Background</label>
+                                                        <div class="input-group">
+                                                            <div class="custom-file">
+                                                                <input type="file" class="custom-file-input" id="exampleInputFile"  accept=".png, .jpg" name="bg">
+                                                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="b_name">ชื่อ File</label>
+                                                        <input type="text" class="form-control" id="b_name" placeholder="ชื่อ File" name="b_name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button type="submit" class="btn btn-primary mt-4" name="add">Submit</button>
+                                                </div>
                                             </div>
+
                                         </div>
+                                        <!-- <div class="card-footer">
+                                            
+                                        </div> -->
                                     </form>
                                 </div>
                             </div>
@@ -81,14 +106,14 @@
         <aside class="control-sidebar control-sidebar-dark">
 
         </aside>
-        
+
     </div>
     <!-- ---------  -->
     <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/footer.php"; ?>
     <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/script.php"; ?>
     <script>
-        $(function () {
-        bsCustomFileInput.init();
+        $(function() {
+            bsCustomFileInput.init();
         });
     </script>
 </body>
