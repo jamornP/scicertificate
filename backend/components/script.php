@@ -21,6 +21,8 @@
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- Summernote -->
 <script src="/scicertificate/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="/scicertificate/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/scicertificate/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
