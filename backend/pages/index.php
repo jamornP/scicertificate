@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backend</title>
     <!-- -------- -->
-    <?php require $_SERVER['DOCUMENT_ROOT'] . "/template/backend/components/link.php"; ?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/link.php"; ?>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
        
         <!-- ----- -->
-        <?php require $_SERVER['DOCUMENT_ROOT'] . "/template/backend/components/load.php"; ?>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . "/template/backend/components/menu_left.php"; ?>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . "/template/backend/components/navbar.php"; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/load.php"; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/menu_left.php"; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/navbar.php"; ?>
        
         <div class="content-wrapper">
             <div class="content-header">
@@ -46,8 +46,8 @@
        
     </div>
     <!-- ---------  -->
-    <?php require $_SERVER['DOCUMENT_ROOT'] . "/template/backend/components/footer.php"; ?>
-    <?php require $_SERVER['DOCUMENT_ROOT'] . "/template/backend/components/script.php"; ?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/footer.php"; ?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/script.php"; ?>
 </body>
 
 </html>
