@@ -17,7 +17,12 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-
+        <?php 
+            // $msg = "บันทึกไม่สำเร็จ";
+            // echo "<script>";
+            // echo "alertError('{$msg}')";
+            // echo "</script>";
+        ?>
         <!-- ----- -->
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/load.php"; ?>
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/menu_left.php"; ?>
@@ -40,6 +45,7 @@
                         $data['b_path'] = "/scicertificate/backend/images/bg/";
                         $data['status'] = 1;
                         print_r($data);
+                        
                     }else{
                         echo "No file";
                     }
