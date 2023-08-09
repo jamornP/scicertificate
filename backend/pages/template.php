@@ -18,7 +18,13 @@
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-       
+        <?php 
+            $msg = "บันทึกสำเร็จ";
+            $url = "background.php";
+            echo "<script>";
+            echo "alertSuccess('{$msg}','{$url}')";
+            echo "</script>";
+        ?>
         <!-- ----- -->
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/load.php"; ?>
         <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/backend/components/menu_left.php"; ?>

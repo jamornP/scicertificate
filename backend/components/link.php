@@ -30,6 +30,9 @@
 <!-- Daterange picker -->
 <link rel="stylesheet" href="/scicertificate/plugins/daterangepicker/daterangepicker.css">
 
+<link rel="stylesheet" href="/scicertificate/plugins/bs-stepper/css/bs-stepper.min.css">
+<link rel="stylesheet" href="/scicertificate/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
 <!-- jQuery -->
 <script src="/scicertificate/plugins/jquery/jquery.min.js"></script>
 <link rel="stylesheet" href="/scicertificate/theme/css/toastr.min.css">
@@ -41,14 +44,14 @@
         window.location.href = url;
       }
       toastr.success(massage, 'Success', {
-        timeOut: 3000
+        timeOut: 2000
       })
     })
   }
   function alertError(massage) {
     $(function() {
       toastr.error(massage, 'Error', {
-        timeOut: 3000
+        timeOut: 2000
       })
     })
   }
