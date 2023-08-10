@@ -30,15 +30,21 @@
 <!-- Daterange picker -->
 <link rel="stylesheet" href="/scicertificate/plugins/daterangepicker/daterangepicker.css">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- bs-stepper -->
+=======
+
+>>>>>>> parent of e0dea073 (up)
 <link rel="stylesheet" href="/scicertificate/plugins/bs-stepper/css/bs-stepper.min.css">
-<!-- icheck-bootstrap -->
 <link rel="stylesheet" href="/scicertificate/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+<<<<<<< HEAD
 <!-- Select2 -->
 <link rel="stylesheet" href="/scicertificate/plugins/select2/css/select2.min.css">
 <link rel="stylesheet" href="/scicertificate/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 =======
 >>>>>>> parent of 4a4720d3 (up)
+=======
+>>>>>>> parent of e0dea073 (up)
 
 <!-- jQuery -->
 <script src="/scicertificate/plugins/jquery/jquery.min.js"></script>

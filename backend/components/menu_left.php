@@ -10,13 +10,17 @@ use App\Model\Background;
 $bgObj = new Background;
 date_default_timezone_set('Asia/Bangkok');
 ?>
+<!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1e1e34;">
+    <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
         <img src="/parttime/imges/logo-white.png" alt="AdminLTE Logo" class="" style="display:table; margin: 0 auto; max-width:200px;">
         <span class="brand-text font-weight-light"></span>
     </a>
 
+    <!-- Sidebar -->
     <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="/scicertificate/dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
@@ -25,6 +29,8 @@ date_default_timezone_set('Asia/Bangkok');
                 <a href="#" class="d-block">User name</a>
             </div>
         </div>
+
+        <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 

@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="card-body">
                                     <form action="" method="post" enctype="multipart/form-data" id="from-post">
-                                       
+                                        <div class="card-body">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <div class="form-group">

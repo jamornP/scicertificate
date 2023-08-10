@@ -19,6 +19,7 @@
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- bs-stepper -->
 <script src="/scicertificate/plugins/bs-stepper/js/bs-stepper.min.js"></script>
 <!-- Select2 -->
@@ -27,6 +28,10 @@
 <script src="/scicertificate/plugins/icheck-bootstrap/"></script>
 =======
 >>>>>>> parent of 4a4720d3 (up)
+=======
+<script src="/scicertificate/plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<!-- <script src="/scicertificate/plugins/icheck-bootstrap/"></script> -->
+>>>>>>> parent of e0dea073 (up)
 <!-- Summernote -->
 <script src="/scicertificate/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- bs-custom-file-input -->
@@ -42,6 +47,7 @@
 <script>
 <<<<<<< HEAD
   $(function() {
+<<<<<<< HEAD
     //Initialize Select2 Elements
     $('.select2').select2()
 
@@ -52,6 +58,8 @@
 =======
   $(function () {
 >>>>>>> parent of 4a4720d3 (up)
+=======
+>>>>>>> parent of e0dea073 (up)
     // Summernote
     $('#summernote').summernote()
 
