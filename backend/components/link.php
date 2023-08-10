@@ -29,6 +29,7 @@
 <link rel="stylesheet" href="/scicertificate/dist/css/adminlte.min.css">
 <!-- Daterange picker -->
 <link rel="stylesheet" href="/scicertificate/plugins/daterangepicker/daterangepicker.css">
+<<<<<<< HEAD
 <!-- bs-stepper -->
 <link rel="stylesheet" href="/scicertificate/plugins/bs-stepper/css/bs-stepper.min.css">
 <!-- icheck-bootstrap -->
@@ -36,6 +37,8 @@
 <!-- Select2 -->
 <link rel="stylesheet" href="/scicertificate/plugins/select2/css/select2.min.css">
 <link rel="stylesheet" href="/scicertificate/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+=======
+>>>>>>> parent of 4a4720d3 (up)
 
 <!-- jQuery -->
 <script src="/scicertificate/plugins/jquery/jquery.min.js"></script>
@@ -48,14 +51,14 @@
         window.location.href = url;
       }
       toastr.success(massage, 'Success', {
-        timeOut: 2000
+        timeOut: 3000
       })
     })
   }
   function alertError(massage) {
     $(function() {
       toastr.error(massage, 'Error', {
-        timeOut: 2000
+        timeOut: 3000
       })
     })
   }

@@ -1,3 +1,4 @@
+
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
@@ -17,12 +18,15 @@
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<<<<<<< HEAD
 <!-- bs-stepper -->
 <script src="/scicertificate/plugins/bs-stepper/js/bs-stepper.min.js"></script>
 <!-- Select2 -->
 <script src="/scicertificate/plugins/select2/js/select2.full.min.js"></script>
 <!-- icheck-bootstrap -->
 <script src="/scicertificate/plugins/icheck-bootstrap/"></script>
+=======
+>>>>>>> parent of 4a4720d3 (up)
 <!-- Summernote -->
 <script src="/scicertificate/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- bs-custom-file-input -->
@@ -36,6 +40,7 @@
 
 <!-- Page specific script -->
 <script>
+<<<<<<< HEAD
   $(function() {
     //Initialize Select2 Elements
     $('.select2').select2()
@@ -44,6 +49,9 @@
     $('.select2bs4').select2({
       theme: 'bootstrap4'
     })
+=======
+  $(function () {
+>>>>>>> parent of 4a4720d3 (up)
     // Summernote
     $('#summernote').summernote()
 
@@ -52,26 +60,17 @@
       mode: "htmlmixed",
       theme: "monokai"
     });
-
-
-
-  })
-  // BS-Stepper Init
-  document.addEventListener('DOMContentLoaded', function() {
-    window.stepper = new Stepper(document.querySelector('.bs-stepper'))
   })
 </script>
 <!-- Page specific script -->
 <script>
-  $(function() {
+  $(function () {
     $("#example1").DataTable({
       // responsive มือถือ
       // lengthChange จำนวนข้อมูลในแต่ละหน้า
       // autoWidth กำหนดความกว้างอัตโนมัติ
       // buttons export
-      "responsive": true,
-      "lengthChange": true,
-      "autoWidth": false,
+      "responsive": true, "lengthChange": true, "autoWidth": false,
       "buttons": ["csv", "print"]
       // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
