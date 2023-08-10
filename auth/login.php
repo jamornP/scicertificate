@@ -41,7 +41,7 @@
                     <button type="submit" class="btn btn-default float-right">Cancel</button>
                     <br>
                     <button onclick="window.location = '<?php echo $login_url; ?>'" type="button" class="btn btn-primary float-right mt-2">
-                        <div class=""><img src="/scicertificate/images/logo_google2.png" alt="Logo" style="display:box; margin: 0 auto; max-width:24px;"> Sign in with Google </div>
+                        <div class=""><img src="/repair-sci/images/logo_google2.png" alt="Logo" style="display:box; margin: 0 auto; max-width:24px;"> Sign in with Google </div>
                     </button>
                 </div>
             </form>
