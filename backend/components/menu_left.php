@@ -1,9 +1,9 @@
-<?php session_start(); ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/vendor/autoload.php"; ?>
 <?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/function/function.php"; ?>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/auth/auth.php"; ?>
-<?php
+<?php require $_SERVER['DOCUMENT_ROOT'] . "/scicertificate/auth/auth.php"; ?>
 
+<?php
+session_start();
 // use App\Model\Auth;
 // $authObj = new Auth;
 use App\Model\Background;
@@ -19,10 +19,10 @@ date_default_timezone_set('Asia/Bangkok');
     <div class="sidebar">
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-                <img src="<?php echo $_SESSION['img'];?>" class="img-circle elevation-2" alt="User Image">
+                <img src="/scicertificate/dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block"><?php echo $_SESSION['name'];?></a>
+                <a href="#" class="d-block">User name</a>
             </div>
         </div>
         <nav class="mt-2">
@@ -39,19 +39,19 @@ date_default_timezone_set('Asia/Bangkok');
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/scicertificate/backend/pages/certificate/background.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Background</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/scicertificate/backend/pages/certificate/ca.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>CA</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/scicertificate/backend/pages/certificate/file.php" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>File Gen Certificate</p>
                             </a>
@@ -64,12 +64,7 @@ date_default_timezone_set('Asia/Bangkok');
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="/scicertificate/auth/login.php" class="nav-link">
-                    <i class="nav-icon far fa-circle text-danger"></i>
-                    <p class="text">Log Out</p>
-                    </a>
-                </li>
+               
             </ul>
         </nav>
         <br>
