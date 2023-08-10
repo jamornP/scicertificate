@@ -12,7 +12,7 @@ date_default_timezone_set('Asia/Bangkok');
 ?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #1e1e34;">
     <a href="index.html" class="brand-link">
-        <img src="/scicertificate/images/logo-white.png" alt="AdminLTE Logo" class="" style="display:table; margin: 0 auto; max-width:200px;">
+        <img src="/parttime/imges/logo-white.png" alt="AdminLTE Logo" class="" style="display:table; margin: 0 auto; max-width:200px;">
         <span class="brand-text font-weight-light"></span>
     </a>
 
