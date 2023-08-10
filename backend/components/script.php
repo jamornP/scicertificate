@@ -17,8 +17,12 @@
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="/scicertificate/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- bs-stepper -->
 <script src="/scicertificate/plugins/bs-stepper/js/bs-stepper.min.js"></script>
-<!-- <script src="/scicertificate/plugins/icheck-bootstrap/"></script> -->
+<!-- Select2 -->
+<script src="/scicertificate/plugins/select2/js/select2.full.min.js"></script>
+<!-- icheck-bootstrap -->
+<script src="/scicertificate/plugins/icheck-bootstrap/"></script>
 <!-- Summernote -->
 <script src="/scicertificate/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- bs-custom-file-input -->
@@ -33,6 +37,13 @@
 <!-- Page specific script -->
 <script>
   $(function() {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
     // Summernote
     $('#summernote').summernote()
 

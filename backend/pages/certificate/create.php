@@ -81,7 +81,7 @@
                                             <div class="step" data-target="#four">
                                                 <button type="button" class="step-trigger" role="tab" aria-controls="four" id="four-trigger" aria-selected="false" disabled="disabled">
                                                     <span class="bs-stepper-circle">4</span>
-                                                    <span class="bs-stepper-label">เลือกกิจกรรม</span>
+                                                    <span class="bs-stepper-label">upload File Excel</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -170,9 +170,22 @@
                                                 <button class="btn btn-primary" onclick="stepper.next()">Next</button>
                                             </div>
                                             <div id="four" class="content" role="tabpanel" aria-labelledby="four-trigger">
-                                                <p>4. เลือกกิจกรรม</p>
+                                                <p>4. upload File Excel</p>
                                                 <div class="row">
-
+                                                    <div class="col-12">
+                                                        <div class="form-group">
+                                                            <label>Minimal</label>
+                                                            <select class="form-control select2" style="width: 100%;">
+                                                                <option selected="selected">Alabama</option>
+                                                                <option>Alaska</option>
+                                                                <option>California</option>
+                                                                <option>Delaware</option>
+                                                                <option>Tennessee</option>
+                                                                <option>Texas</option>
+                                                                <option>Washington</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <hr>
                                                 <button class="btn btn-primary" onclick="stepper.previous()">Previous</button>
@@ -185,7 +198,7 @@
                                     <!-- Visit <a href="https://github.com/Johann-S/bs-stepper/#how-to-use-it">bs-stepper documentation</a> for more examples and information about the plugin. -->
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -204,6 +217,8 @@
     <script>
         $(function() {
             bsCustomFileInput.init();
+
+            
         });
     </script>
 </body>
