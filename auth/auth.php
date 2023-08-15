@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 <?php
     if(isset($_SESSION['login_certificate'])){
@@ -21,5 +20,3 @@
     }
 ?>
    
-=======
->>>>>>> parent of 4a4720d3 (up)

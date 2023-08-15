@@ -37,12 +37,12 @@
                 // print_r($_POST);
                 if(isset($_FILES['bg']['tmp_name'])){
                     $ext=(explode(".",$_FILES['bg']['name']));
-                    $new_name = $_POST['ca_name'].".".$ext[1];
+                    $new_name = uniqid().".".$ext[1];
                     $file_path = $_SERVER['DOCUMENT_ROOT']."/scicertificate/backend/images/ca/".$new_name;
                     if($_FILES['bg']['error']==0){
                         move_uploaded_file($_FILES['bg']['tmp_name'],$file_path);
-                        $data['ca_name'] = $new_name;
-                        $data['ca_path'] = "/scicertificate/backend/images/ca/";
+                        $data['ca_name'] = $_POST['ca_name'];
+                        $data['ca_path'] = "/scicertificate/backend/images/ca/".$new_name;
                         $data['status'] = 1;
                         // print_r($data);
                         $ck = $bgObj->addCa($data);
@@ -137,7 +137,7 @@
                                             foreach($data as $ca){
                                                 echo "
                                                     <div class='col-md-2 col-6 p-1'>
-                                                        <img src='{$ca['ca_path']}{$ca['ca_name']}' class='img-thumbnail shadow' alt='...'>
+                                                        {$ca['ca_name']}
                                                     </div>
                                                 ";
                                             }
